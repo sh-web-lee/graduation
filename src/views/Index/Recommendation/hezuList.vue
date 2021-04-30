@@ -72,6 +72,9 @@ export default {
     margin: 0 .1rem .747rem .1rem;
     overflow: hidden;
     white-space: nowrap;
+    box-shadow: 5px 5px 5px #999;
+    border-radius: 5px;
+    width: 45%;
     a {
       display: block;
       img {

@@ -2,7 +2,7 @@
   <div class="index">
     <div class="home-banner-wrapper" style="background-image:url(https://webimg.ziroom.com/020607f1-b1e4-47e7-b2f8-fc03a9d435c5.png);">
         <div class="slogan">
-          <h1>品质租房选自如</h1>
+          <h1>品质租房选Hi 租房</h1>
           <h2>9年，10城，近45万业主、300万自如客的选择</h2>
         </div>
         <div class="search-box v-transfer-dom" id="l_query">
@@ -46,7 +46,7 @@
             sticky
             color="#F37335"
             title-active-color="#F37335"
-            style="z-index: 999"
+            style="z-index: 6"
           >
             <van-tab title="合租" name="a"><HezuList /></van-tab>
             <van-tab title="整租" name="b"><ZhengzuList /></van-tab>
@@ -216,7 +216,7 @@ export default {
     right: 0;
     margin-right: auto;
     margin-left: auto;
-    z-index: 666;
+    z-index: 2;
     background-color: #fff;
     border-radius: .307rem;
     display: flex;
@@ -232,5 +232,8 @@ export default {
         border: none;
       }
     }
+}
+.index {
+  width: 100%;
 }
 </style>

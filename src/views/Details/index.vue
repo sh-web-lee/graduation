@@ -422,7 +422,6 @@ export default {
   methods: {
     onload (e) {
       const detail = this.$route.query.detail
-      console.log(this.$route)
       this.detail = detail
       this.swipeLists = detail.swipeImgs
       this.houseTags = detail.houseTags

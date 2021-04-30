@@ -1,7 +1,9 @@
 <template>
   <div class="index-head">
     <div class="city-name">
-      成都
+      <van-dropdown-menu>
+        <van-dropdown-item v-model="value1" :options="option1" />
+      </van-dropdown-menu>
     </div>
     <div class="other-station">
       <ul class="check-identity">
@@ -14,6 +16,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { DropdownMenu, DropdownItem } from 'vant'
+
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
 export default {
   name: 'IndexHead',
   data () {
@@ -29,6 +36,13 @@ export default {
           name: '房东',
           path: '/mine'
         }
+      ],
+      value1: 0,
+      value2: 'a',
+      option1: [
+        { text: '成都', value: 0 },
+        { text: '北京', value: 1 },
+        { text: '上海', value: 2 }
       ]
     }
   }
@@ -38,6 +52,7 @@ export default {
 <style lang="scss" scoped>
 .index-head {
     display: flex;
+    line-height: 46px;
     .city-name {
       width: 20%;
       font-size: .347rem;
@@ -47,7 +62,7 @@ export default {
       .check-identity {
         margin-left: 20%;
         position: relative;
-        z-index: 999;
+        z-index: 5;
         display: flex;
         li {
           margin-left: 10%;
